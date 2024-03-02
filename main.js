@@ -1,26 +1,4 @@
-onst cookieBox = document.querySelector(".cookie__box");
-acceptBtn = cookieBox.querySelector(".btn__group .accept__btn");
 
-acceptBtn.onclick = () => {
-  document.cookie =
-    "CookieBy=NoOneLikesPopUpsSTOPusingTHEMpleaseIbegYOU; max-age=" +
-    60 * 60 * 24 * 20;
-  if (document.cookie) {
-    cookieBox.classList.add("hide");
-    alert(
-      "Cookie is set! You will recieve your cookie by mail within 1 to 2 days."
-    );
-  } else {
-    alert("Cookie couldn't be set for some reason.");
-  }
-};
-
-let checkCookie = document.cookie.indexOf(
-  "CookieBy=NoOneLikesPopUpsSTOPusingTHEMpleaseIbegYOU"
-);
-checkCookie != -1
-  ? cookieBox.classList.add("hide")
-  : cookieBox.classList.remove("hide")
 
 
 //executeCodes function will be called on webpage load
