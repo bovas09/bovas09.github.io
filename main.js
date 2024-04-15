@@ -26,3 +26,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+  // Add event listener to detect the '/' key press
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "/") {
+      // Show the modal
+      var modalOverlay = document.getElementById("modalOverlay");
+      modalOverlay.style.display = "block";
+
+      // Prevent default browser behavior
+      event.preventDefault();
+    }
+  });
+
+  // Add event listener to close the modal when the Esc key is pressed
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" || event.key === "Esc") {
+      closeModal();
+    }
+  });
+
+  // Function to close the modal
+  function closeModal() {
+    var modalOverlay = document.getElementById("modalOverlay");
+    modalOverlay.style.display = "none";
+  }
