@@ -5,5 +5,12 @@
 <img src="https://icon-library.com/images/green-check-mark-icon/green-check-mark-icon-8.jpg">
 
 <script>
-  self.close();
+  document.addEventListener('DOMContentLoaded', function() {
+    var targetUrl = 'https://bovas09.github.io';
+    var delayInMilliseconds = 2250;
+  
+    setTimeout(function() {
+      window.location.href = targetUrl;
+    }, delayInMilliseconds);
+  });
 </script>
