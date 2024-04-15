@@ -9,7 +9,78 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="https://thumbs2.imgbox.com/82/4a/KNeMGaTW_t.jpg">
 </head>
-
+<style>/* Styles for showcase container */
+  .showcase {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for thumbnail */
+  .thumbnail {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Styles for thumbnail overlay */
+  .thumbnail__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Styles for thumbnail overlay link */
+  .thumbnail__overlay .btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for thumbnail overlay */
+  .thumbnail:hover .thumbnail__overlay {
+    opacity: 1;
+  }
+  
+  /* Styles for description */
+  .desc {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .showcase {
+      flex-direction: row;
+    }
+  
+    .showcase.showcase--inverted {
+      flex-direction: row-reverse;
+    }
+  
+    .desc {
+      width: 50%;
+    }
+  
+    .thumbnail {
+      width: 50%;
+    }
+  }
+  </style>
 
 <body>
 
@@ -28,6 +99,7 @@
     <section id="home">
       <nav class="cool-links">
         <ul>
+          <br>
           <li><a href="#" onclick="refreshPage()">bovas.dev</a>
           </li>
         </ul>
@@ -51,6 +123,45 @@
       <br><br>
     </section>
   </section>
+  <div class="showcase">
+    <div class="thumbnail thumbnail--awesome">
+      <div class="thumbnail__overlay">
+        <a class="btn" href="#0">DETAILS</a>
+      </div>
+    </div>
+    <div class="desc">
+      <p>Case Study</p>
+      <h2>Awesome Project</h2>
+      <p>This project is awesome!
+      </p>
+    </div>
+  </div>
+  <div class="showcase">
+    <div class="thumbnail">
+      <div class="thumbnail__overlay">
+        <a class="btn" href="#0">DETAILS</a>
+      </div>
+    </div>
+    <div class="desc">
+      <p>Case Study</p>
+      <h2>Awesome Project 2</h2>
+      <p>This project is even more awesome!
+      </p>
+    </div>
+  </div>
+  <div class="showcase showcase--inverted">
+    <div class="desc">
+      <p>Case Study</p>
+      <h2>Inverted Project</h2>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l
+      </p>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail__overlay">
+        <a class="btn" href="#0">DETAILS</a>
+      </div>
+    </div>
+  </div>
     <section id="projects">
       <h2>.featured_projects</h2>
       <div class="work">
@@ -59,7 +170,7 @@
         <p>This is a school website that encapsulates the educational essence of our institution, offering a
           welcoming platform for students to access resources, course materials, and interactive learning experiences.
         </p>
-        <a href="https://aaf337c4-d016-418c-9d33-df13659db406-00-et78ynssjk3f.pike.replit.dev/">Live Demo</a>
+        <a href="https://github.com/bovas09/nithyajeevan">More Details...</a>
       </div>
     </section>
     </div>
@@ -70,7 +181,13 @@
           a serene online platform for seekers to access teachings, scriptures, and community engagement.</p>
         <a href="https://d8ff749c-2a63-4087-b854-99a8e75ce73f-00-yr97lpik7n72.sisko.replit.dev/">Live Demo</a>
       </div>
-      
+      <div class="work">
+        <img src="https://www.webpagescreenshot.info/image-url/Y42UVOwex">
+        <h3>Other websites</h3>
+        <p>This is a religious website that embodies the spiritual essence of our faith, providing
+          a serene online platform for seekers to access teachings, scriptures, and community engagement.</p>
+        <a href="https://d8ff749c-2a63-4087-b854-99a8e75ce73f-00-yr97lpik7n72.sisko.replit.dev/">Live Demo</a>
+      </div>
       
 <br>
     <button class="more-projects">More Projects</button>
