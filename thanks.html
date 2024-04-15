@@ -5,5 +5,11 @@
 <img src="https://icon-library.com/images/green-check-mark-icon/green-check-mark-icon-8.jpg">
 
 <script>
-  self.close();
+  document.addEventListener('DOMContentLoaded', function() {
+    var delayInMilliseconds = 5000; // 5000 milliseconds = 5 seconds
+  
+    setTimeout(function() {
+      window.close();
+    }, delayInMilliseconds);
+  });
 </script>
