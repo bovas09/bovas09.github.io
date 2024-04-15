@@ -1,0 +1,10 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var targetUrl = '';
+    var delayInMilliseconds = 2250;
+  
+    setTimeout(function() {
+      window.location.href = targetUrl;
+    }, delayInMilliseconds);
+  });
+</script>
