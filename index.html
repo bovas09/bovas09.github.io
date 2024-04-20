@@ -9,82 +9,9 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="https://thumbs2.imgbox.com/82/4a/KNeMGaTW_t.jpg">
 </head>
-<style>/* Styles for showcase container */
-  .showcase {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  
-  /* Styles for thumbnail */
-  .thumbnail {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /* Styles for thumbnail overlay */
-  .thumbnail__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Styles for thumbnail overlay link */
-  .thumbnail__overlay .btn {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect for thumbnail overlay */
-  .thumbnail:hover .thumbnail__overlay {
-    opacity: 1;
-  }
-  
-  /* Styles for description */
-  .desc {
-    flex: 1;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  /* Media query for responsiveness */
-  @media (min-width: 768px) {
-    .showcase {
-      flex-direction: row;
-    }
-  
-    .showcase.showcase--inverted {
-      flex-direction: row-reverse;
-    }
-  
-    .desc {
-      width: 50%;
-    }
-  
-    .thumbnail {
-      width: 50%;
-    }
-  }
-  </style>
-
 <body>
   <body oncontextmenu="return false;">
-    <section id="home" style="background-color: #B99470;">
+    <section id="home" style="background-color: #ffffff;">
       <nav class="cool-links">
         <ul>
           <br>
@@ -112,7 +39,7 @@
     </section>
   </section>
   
-    <section id="projects">
+    <section id="projects" style="background-color: #B99470;">
       <h2>.featured_projects</h2>
       <div class="work">
         <img src="https://www.webpagescreenshot.info/image-url/x7NoRKy1J">
@@ -122,7 +49,6 @@
         </p>
         <a href="https://github.com/bovas09/nithyajeevan">Github & More Details</a>
       </div>
-    </section>
     </div>
       <div class="work">
         <img src="https://www.webpagescreenshot.info/image-url/Y42UVOwex">
@@ -130,7 +56,7 @@
         <p>This is a religious website that embodies the spiritual essence of our faith, providing
           a serene online platform for seekers to access teachings, scriptures, and community engagement.</p>
         <a href="https://github.com/bovas09/aschoolwebsite">Github & More Details</a>
-      </div>
+      </div></section>
 <br>
     <button class="more-projects">More Projects</button>
     
@@ -143,12 +69,12 @@
       <h3 id="Quote"></h3>
     </section>
     <br>
+    <section id="exp">
     <h2>My Skills, Capabilities & Experiences</h2>
     <div class="container">
-      <h1>My Skills, Capabilities & Experience</h1>
-      <p>I am proficient in various programming languages and technologies. Here's a brief overview:</p>
+      <p style="text-align: center;">I am proficient in various programming languages and technologies. Here's a brief overview:</p>
       <div class="skills-list">
-          <h2>Skills:</h2>
+          <h3><b>Skills,</b></h3>
           <ul>
               <li>Scratch</li>
               <li>HTML</li>
@@ -159,17 +85,15 @@
           </ul>
       </div>
       <div class="experience">
-          <h2>Experience:</h2>
+          <h3>Experience & Capabilities,</h3>
           <p>I have created various websites and games using my skills in programming and development. Additionally, I have participated in and won several tournaments in my country.</p>
       </div>
       <div class="certificate">
-          <h2>Certificate:</h2>
+          <h3>Certificate,</h3>
           <p>I hold a certificate of Junior Programmer from LBS Center in Kalamasseary.</p>
       </div>
   </div>
-    <section id="myskills" style="color:blue">
-    <p> I have learnt many lang over tgh euyears invluding c++ which is the mosti usescractchj.</p>
-    </section>
+</section>
       <br>
     <section id="about">
     </section>
@@ -239,9 +163,9 @@
       </div>
 
       <br>
-      <section id="contact">
+      <section id="contact" style="background-color: #B99470;">
         <br>
-        <h2>Contact</h2>
+        <h2 style="color: black;">Contact Form</h2>
 
         <div class="container">
           <form target="_blank" action="https://formsubmit.co/bovaskjacob2009@gmail.com" method="POST">
@@ -251,15 +175,21 @@
             <div class="form-group">
               <div class="form-row">
                 <div class="col">
-                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  Name
+
+                  <input type="text" name="name" class="form-control" placeholder="eg. John Doe" required>
                 </div>
                 <div class="col">
-                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  Email Address
+
+                  <input type="email" name="email" class="form-control" placeholder="youremail@example.com" required>
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              Message
+
+              <textarea placeholder="blah blah blah blah" class="form-control" name="message" rows="10" required></textarea>
             </div>
             <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
           </form>
@@ -267,11 +197,11 @@
         <footer>
           <div class="container">
             <div class="social-icons">
-              <a href="https://www.discord.com/yourpage"><i class="fab fa-discord"></i></a>
-              <a href="https://www.youtube.com/yourpage"><i class="fab fa-youtube"></i></a>
-              <a href="https://www.github.com/yourpage"><i class="fab fa-github"></i></a>
+              <a href="https://www.discord.com/juniorduckjd"><i class="fab fa-discord"></i></a>
+              <a href="https://www.youtube.com/channel/UC8LHm3poJ0IC7VfbOlEwKkQ"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com/bovas09"><i class="fab fa-github"></i></a>
               <a href="https://www.instagram.com/ayobovas"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.twitter.com/yourpage"><i class="fab fa-twitter"></i></a>
+              <a href="https://twitter.com/Bovas91668305"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
           <script type="text/javascript">
@@ -283,16 +213,14 @@
               scJsHost +
               "statcounter.com/counter/counter.js'></" + "script>");
           </script>
+          <p style="color: black;">Total page visits!</p>
           <noscript>
             <div class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12917183/0/8a93c438/0/"
                 alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></div>
           </noscript>
-          <p style="color: black;">Total Page Visits!</p>
           <a style="color: black;" href="policy.html">Term of Services & Privacy Policy</a><br>
-          <a style="color: black;" href="policy.html">Cookie Policy</a>
-          <p style="color: black;">Have More Questions ? Contact : bovaskjacob@gmail.com</p>
-          <p style="color: black;">© Bovas K Jacob, All rights reserved.</p>
-          <p style="color: black;">Made with 💖 by Bovas in India.</p>
+          <p style="color: black;">Have more questions? mail bovaskjacob@gmail.com</p>
+          <p style="color: black;">© Bovas K Jacob, All rights reserved. Made with 💖 by Bovas.</p>
           <br><br>
           </div>
         </footer>
