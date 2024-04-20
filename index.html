@@ -83,18 +83,6 @@
   </style>
 
 <body>
-
-<div class="overlay" id="modalOverlay"> 
-  <div class="modal" id="myModal">
-    <!-- Modal content goes here -->
-    <h2 style="font-family: 'REM', sans-serif;">Secret Keyboard Controls</h2>
-    <p>{esc} Leave {🠕🠗} Navigate {/} Menu </p>
-    <p>{Alt + F4} Close {Ctrl + R} Refresh {Ctrl + T} New Tab </p>
-    <input type="text" id="searchInput" placeholder="Search">
-    <button onclick="search()">Search</button>
-  </div>
-</div>
-
   <body oncontextmenu="return false;">
     <section id="home" style="background-color: #B99470;">
       <nav class="cool-links">
@@ -123,45 +111,7 @@
       <br><br>
     </section>
   </section>
-  <div class="showcase">
-    <div class="thumbnail thumbnail--awesome">
-      <div class="thumbnail__overlay">
-        <a class="btn" href="#0">DETAILS</a>
-      </div>
-    </div>
-    <div class="desc">
-      <p>Case Study</p>
-      <h2>Awesome Project</h2>
-      <p>This project is awesome!
-      </p>
-    </div>
-  </div>
-  <div class="showcase">
-    <div class="thumbnail">
-      <div class="thumbnail__overlay">
-        <a class="btn" href="#0">DETAILS</a>
-      </div>
-    </div>
-    <div class="desc">
-      <p>Case Study</p>
-      <h2>Awesome Project 2</h2>
-      <p>This project is even more awesome!
-      </p>
-    </div>
-  </div>
-  <div class="showcase showcase--inverted">
-    <div class="desc">
-      <p>Case Study</p>
-      <h2>Inverted Project</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l
-      </p>
-    </div>
-    <div class="thumbnail">
-      <div class="thumbnail__overlay">
-        <a class="btn" href="#0">DETAILS</a>
-      </div>
-    </div>
-  </div>
+  
     <section id="projects">
       <h2>.featured_projects</h2>
       <div class="work">
@@ -194,6 +144,29 @@
     </section>
     <br>
     <h2>My Skills, Capabilities & Experiences</h2>
+    <div class="container">
+      <h1>My Skills, Capabilities & Experience</h1>
+      <p>I am proficient in various programming languages and technologies. Here's a brief overview:</p>
+      <div class="skills-list">
+          <h2>Skills:</h2>
+          <ul>
+              <li>Scratch</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>C++</li>
+              <li>Python (most frequently used)</li>
+          </ul>
+      </div>
+      <div class="experience">
+          <h2>Experience:</h2>
+          <p>I have created various websites and games using my skills in programming and development. Additionally, I have participated in and won several tournaments in my country.</p>
+      </div>
+      <div class="certificate">
+          <h2>Certificate:</h2>
+          <p>I hold a certificate of Junior Programmer from LBS Center in Kalamasseary.</p>
+      </div>
+  </div>
     <section id="myskills" style="color:blue">
     <p> I have learnt many lang over tgh euyears invluding c++ which is the mosti usescractchj.</p>
     </section>
@@ -348,6 +321,58 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       });
+      window.addEventListener("load", executeCodes);
+function scrollFunction() { document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? document.getElementById("scroll-up-btn").style.display = "block" : document.getElementById("scroll-up-btn").style.display = "none" } window.onscroll = function() { scrollFunction() }, document.getElementById("scroll-up-btn").addEventListener("click", (function() { document.body.scrollTop = 0, document.documentElement.scrollTop = 0 })); const quotes = ["The best way to predict the future is to invent it. - Alan Kay", "Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill", "The only way to do great work is to love what you do. - Steve Jobs", "Believe you can and you're halfway there. - Theodore Roosevelt", "I have not failed. I've just found 10,000 ways that won't work. - Thomas A. Edison", "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt", "If you want to lift yourself up, lift up someone else. - Booker T. Washington", "You miss 100% of the shots you don't take. - Wayne Gretzky", "The only thing we have to fear is fear itself. - Franklin D. Roosevelt", "Strive not to be a success, but rather to be of value. - Albert Einstein"], randomIndex = Math.floor(Math.random() * quotes.length), quoteElement = document.getElementById("Quote"), quoteHeader = document.createElement("h3"); quoteHeader.textContent = quotes[randomIndex], quoteHeader.style.color = "black", quoteElement.appendChild(quoteHeader); const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], dayOfWeek = daysOfWeek[(new Date).getDay()], message = `Have a wonderful ${dayOfWeek} !`, greetingElement = document.getElementById("greeting"); greetingElement.innerText = message; let startTime = Date.now(), timer = document.getElementById("timer"); setInterval((function() { let e = Math.floor((Date.now() - startTime) / 1e3); timer.innerText = e }), 1e3); let visitCount = localStorage.getItem("visitCount"); function scrollFunction() { const e = document.getElementById("scroll-up-btn"); document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? e.style.display = "block" : e.style.display = "none" } function refreshPage() { location.reload() } null === visitCount && (visitCount = 0), visitCount++, localStorage.setItem("visitCount", visitCount), document.getElementById("visit-count").textContent = visitCount, window.onscroll = function() { scrollFunction() }, document.getElementById("scroll-up-btn").addEventListener("click", (function() { document.body.scrollTop = 0, document.documentElement.scrollTop = 0 }));
+document.querySelector('.cv').addEventListener('click', function () {
+        var link = document.createElement('a');
+        link.href = 'https://resume.io/r/TNImOJH8l';
+        link.target = '_blank';
+        link.download = 'Resume.pdf';
+        link.click();
+      });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+  // Add event listener to detect the '/' key press
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "/") {
+      // Show the modal
+      var modalOverlay = document.getElementById("modalOverlay");
+      modalOverlay.style.display = "block";
+
+      // Prevent default browser behavior
+      event.preventDefault();
+    }
+  });
+
+  // Add event listener to close the modal when the Esc key is pressed
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" || event.key === "Esc") {
+      closeModal();
+    }
+  });
+
+  // Function to close the modal
+  function closeModal() {
+    var modalOverlay = document.getElementById("modalOverlay");
+    modalOverlay.style.display = "none";
+  }
     </script>
     <script src="main.js"></script>
   </body>
